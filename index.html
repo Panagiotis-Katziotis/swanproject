@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Swan Project</title>
+
+<style>
+:root {
+  --bg1: #000000;
+  --bg2: #19005f;
+  --card1: linear-gradient(135deg,#4da9ff,#ff6bb5);
+  --card2: linear-gradient(135deg,#ff6bb5,#ff9f43);
+  --card3: linear-gradient(135deg,#6c5ce7,#00cec9);
+  --text: #000000;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(180deg,var(--bg1),var(--bg2));
+  color: var(--text);
+  text-align: center;
+  font-size: 250%;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 50px 30px;
+}
+
+/* HEADER */
+.header img {
+  width: 445px;
+  margin-bottom: 30px;
+}
+
+
+.logo {
+  font-size: 7rem;
+  font-weight: 950;
+  line-height: 1;
+  color: #ffffff;
+}
+
+.subtitle {
+  font-size: 2.4rem;
+  margin-top: 10px;
+  margin-bottom: 3rem;
+  opacity: 0.95;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* DESCRIPTION SMALLER */
+.text {
+  font-size: 0.7em;
+  line-height: 1;
+  max-width: 950px;
+  margin: 0 auto 3rem;
+  opacity: 0.95;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+
+/* CARDS */
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.card {
+  background: var(--card1);
+  padding: 2.2rem;
+  border-radius: 22px;
+  text-align: left;
+  color: #000;
+}
+
+.card.alt {
+  background: var(--card2);
+}
+
+.card.dark {
+  background: var(--card3);
+  color: #000;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+/* BUTTONS */
+.buttons {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 1rem 1.8rem;
+  border-radius: 18px;
+  font-weight: bold;
+  background: #000;
+  color: #fff;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+/* LINK CARD */
+.card-link {
+  text-decoration: none;
+}
+
+/* FOOTER */
+.footer {
+  margin-top: 5rem;
+  padding-top: 2rem;
+  border-top: 2px solid rgba(255,255,255,0.3);
+  color: #383838;
+}
+
+.footer a {
+  color: #3d3d3d;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- HEADER -->
+  <div class="header">
+    <img src="swan2.png" alt="SWAN Logo">
+    <div class="logo">SWAN</div>
+    <div class="subtitle">together for a better digital world</div>
+  </div>
+
+  <!-- DESCRIPTION -->
+  <div class="text">
+    This is a try to make a digital world that it's not a “puppet” to the government or big companies.
+    Here we can exchange opinions and share our projects to improve ourselves.
+    <br><br>
+    Αυτή είναι μια προσπάθεια να δημιουργήσουμε έναν ψηφιακό κόσμο που δεν θα είναι «μαριονέτα»
+    της κυβέρνησης ή των μεγάλων εταιρειών.
+  </div>
+
+  <!-- CARDS -->
+  <div class="cards">
+
+    <!-- SWAN Browser -->
+    <div class="card">
+      <h3>SWAN BROWSER</h3>
+      <p>
+        Το SWAN Browser είναι ένα
+ελαφρύ πρόγραμμα περιήγησης με
+κύριο σκοπό την ιδιωτικότητα, την
+ασφάλεια και την ευχαρίστηση του
+χρήστη.
+      </p>
+
+      <div class="buttons">
+        <a class="btn" href="https://github.com/Panagiotis-Katziotis/swan-browser/releases/download/5.1A/Swan-Browser-V5.1.apk">Android</a>
+        <a class="btn" href="https://github.com/Panagiotis-Katziotis/swan-browser/releases/download/1.0W/SwanBrowser.zip">Windows</a>
+      </div>
+    </div>
+
+    <!-- HERON OS -->
+    <div class="card alt">
+      <h3>HERON OS</h3>
+      <p>
+Το Heron OS1 είναι ένα ελαφρύ και απλό
+πρόγραμμα Debian-based Linux Distro κυρίως
+για καθημερινή χρήση.
+      </p>
+
+      <div class="buttons">
+        <a class="btn" href="https://archive.org/download/heronos-1.01/heronos-1.01.iso">Download ISO</a>
+      </div>
+    </div>
+
+    <!-- MORE (FULL CARD LINK) -->
+    <a class="card-link" href="https://youtu.be/dQw4w9WgXcQ?si=0SjOwDr5cW6s51gP">
+      <div class="card dark">
+        <h3>MORE…</h3>
+        <p>Ανακάλυψτε περισσότερα και δείτε πληροφορίες</p>
+      </div>
+    </a>
+
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <a href="https://github.com/Panagiotis-Katziotis">
+      Παναγιώτης Κατζιώτης
+    </a>
+    <h6>SWAN PROJECT | 2026</h6>
+  </div>
+
+</div>
+
+</body>
+</html>
